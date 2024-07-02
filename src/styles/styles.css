@@ -1,0 +1,72 @@
+:root {
+	--background: #1c1c1c;
+	--text: #f8f8f8;
+	--poke-red: #ff1f1f;
+	--poke-sky: #5db9ff;
+	--poke-yellow: #fbd743;
+	--poke-blue: #363b81;
+
+	--fire-color: #de3612;
+	--fire-light-color: #0d131a;
+	--fire-gradient: linear-gradient(
+		180deg,
+		var(--fire-color),
+		var(--fire-light-color)
+	);
+
+	--water-color: #0b8bc2;
+	--water-light-color: #0d131a;
+	--water-gradient: linear-gradient(
+		180deg,
+		var(--water-color),
+		var(--water-light-color)
+	);
+
+	--grass-color: #5eab2e;
+	--grass-light-color: #0d131a;
+	--grass-gradient: linear-gradient(
+		180deg,
+		var(--grass-color),
+		var(--grass-light-color)
+	);
+
+	--electric-color: #f7d02c;
+	--electric-light-color: #0d131a;
+	--electric-gradient: linear-gradient(
+		180deg,
+		var(--electric-color),
+		var(--electric-light-color)
+	);
+
+	--ground-color: #d8b265;
+	--ground-light-color: #0d131a;
+	--ground-gradient: linear-gradient(
+		180deg,
+		var(--ground-color),
+		var(--ground-light-color)
+	);
+	--psychic-color: #f95587;
+	--psychic-light-color: #0d131a;
+	--psychic-gradient: linear-gradient(
+		180deg,
+		var(--psychic-color),
+		var(--psychic-light-color)
+	);
+
+	--text-font: "Mulish", sans-serif;
+	--title-font: "Bebas Neue", sans-serif;
+}
+body {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: var(--text-font);
+	font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--title-font);
+}
