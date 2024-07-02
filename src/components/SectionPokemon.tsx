@@ -65,7 +65,7 @@ export const SectionPokemon = () => {
 					"pokemonData",
 					JSON.stringify(pokemonDataStorage)
 				);
-				console.log("|---------------|");
+				console.log("|--------DATA STORAGE-------|");
 				console.log(pokemonDataStorage);
 			} catch (error) {
 				setError(true);

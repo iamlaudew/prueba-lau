@@ -4,7 +4,9 @@ import styled from "@emotion/styled";
 interface Props {
 	setPokemon: (option: string) => void;
 }
-
+interface DropdownContentProps {
+	open: boolean;
+}
 const DropdownContainer = styled.div`
 	position: relative;
 	display: flex;
@@ -31,7 +33,7 @@ const DropdownButton = styled.button`
 	}
 `;
 
-const DropdownContent = styled.div`
+const DropdownContent = styled.div<DropdownContentProps>`
 	display: ${(props) => (props.open ? "block" : "none")};
 	position: absolute;
 	text-align: center;

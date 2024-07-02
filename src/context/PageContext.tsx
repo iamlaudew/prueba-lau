@@ -9,7 +9,12 @@ interface Props {
 	children: JSX.Element | JSX.Element[];
 }
 
-const PageContext = createContext<PageContextType>({});
+const defaultValue: PageContextType = {
+	pageSelected: undefined,
+	setPageSelected: () => {},
+};
+
+const PageContext = createContext<PageContextType>(defaultValue);
 
 const PageProvider = ({ children }: Props) => {
 	const [pageSelected, setPageSelected] = useState<string>("about");
