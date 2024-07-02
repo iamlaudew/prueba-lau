@@ -1,56 +1,45 @@
 :root {
 	--background: #1c1c1c;
 	--text: #f8f8f8;
-	--poke-red: #ff1f1f;
-	--poke-sky: #5db9ff;
-	--poke-yellow: #fbd743;
-	--poke-blue: #363b81;
 
-	--fire-color: #de3612;
-	--fire-light-color: #0d131a;
-	--fire-gradient: linear-gradient(
-		180deg,
-		var(--fire-color),
-		var(--fire-light-color)
-	);
+	--fire-color: #ff756b;
+	--fire-gradient: linear-gradient(180deg, var(--fire-color), transparent);
 
-	--water-color: #0b8bc2;
-	--water-light-color: #0d131a;
-	--water-gradient: linear-gradient(
-		180deg,
-		var(--water-color),
-		var(--water-light-color)
-	);
+	--water-color: #66c2e0;
+	--water-gradient: linear-gradient(180deg, var(--water-color), transparent);
 
-	--grass-color: #5eab2e;
-	--grass-light-color: #0d131a;
-	--grass-gradient: linear-gradient(
-		180deg,
-		var(--grass-color),
-		var(--grass-light-color)
-	);
+	--grass-color: #9fd97d;
+	--grass-gradient: linear-gradient(180deg, var(--grass-color), transparent);
 
-	--electric-color: #f7d02c;
-	--electric-light-color: #0d131a;
+	--electric-color: #fbe07a;
 	--electric-gradient: linear-gradient(
 		180deg,
 		var(--electric-color),
-		var(--electric-light-color)
+		transparent
 	);
 
-	--ground-color: #d8b265;
-	--ground-light-color: #0d131a;
+	--ground-color: #bda58a;
 	--ground-gradient: linear-gradient(
 		180deg,
 		var(--ground-color),
-		var(--ground-light-color)
+		transparent
 	);
-	--psychic-color: #f95587;
-	--psychic-light-color: #0d131a;
+
+	--psychic-color: #d1a7fb;
 	--psychic-gradient: linear-gradient(
 		180deg,
 		var(--psychic-color),
-		var(--psychic-light-color)
+		transparent
+	);
+
+	--fairy-color: #e3b1b1;
+	--fairy-gradient: linear-gradient(180deg, var(--fairy-color), transparent);
+
+	--normal-color: #bdbdbd;
+	--normal-gradient: linear-gradient(
+		180deg,
+		var(--normal-color),
+		transparent
 	);
 
 	--text-font: "Mulish", sans-serif;
@@ -69,4 +58,36 @@ h4,
 h5,
 h6 {
 	font-family: var(--title-font);
+}
+
+.background {
+	background: var(--normal-gradient);
+}
+
+.background.fire {
+	background: var(--fire-gradient);
+}
+
+.background.water {
+	background: var(--water-gradient);
+}
+
+.background.grass {
+	background: var(--grass-gradient);
+}
+
+.background.electric {
+	background: var(--electric-gradient);
+}
+
+.background.ground {
+	background: var(--ground-gradient);
+}
+
+.background.psychic {
+	background: var(--psychic-gradient);
+}
+
+.background.fairy {
+	background: var(--fairy-gradient);
 }

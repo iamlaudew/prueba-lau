@@ -12,7 +12,7 @@ interface Props {
 const PageContext = createContext<PageContextType>({});
 
 const PageProvider = ({ children }: Props) => {
-	const [pageSelected, setPageSelected] = useState<string>("home");
+	const [pageSelected, setPageSelected] = useState<string>("about");
 
 	return (
 		<PageContext.Provider value={{ pageSelected, setPageSelected }}>
